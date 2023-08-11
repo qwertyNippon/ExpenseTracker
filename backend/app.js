@@ -1,6 +1,7 @@
 const express = require('express')
-const cors = require('cors')
-const { db } = require('./db/db')
+const cors = require('cors');
+const { db } = require('./db/db');
+const {readdirSync} = require('fs')
 
 const app = express()
 require('dotenv').config()
@@ -14,6 +15,9 @@ app.use(cors())
 // app.get('/', (req, res) => {
 //     res.send('hello world')
 // })
+
+//routes
+
 
 const server = () => {
     db()
