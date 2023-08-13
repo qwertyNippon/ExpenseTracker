@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import bg from '../src/img/bg.png'
+import { MainLayout } from './Styles/Layouts';
 
 function App() {
   return (
     <AppStyled bg = {bg} className="App">
-      <main>
-        
-      </main>
+      <MainLayout>
+
+      </MainLayout>
     </AppStyled>
   );
 }
