@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { useWindowSize } from "../../Utils/useWindowSize";
 
 
@@ -18,7 +18,6 @@ function Orb() {
             transform: translate(0, 0);
         }
     `
-
 
     const OrbStyled = styled.div`
         width: 70vh;
