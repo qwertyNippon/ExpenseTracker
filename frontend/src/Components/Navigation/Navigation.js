@@ -12,9 +12,9 @@ function Navigation() {
                     <p>Our Money</p>
                 </div>
             </div>
-            <div className="menu-items">
+            <ul className="menu-items">
 
-            </div>
+            </ul>
         </NavStyled>
     )
 }
