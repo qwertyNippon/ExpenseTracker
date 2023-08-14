@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 import avatar from '../../img/avatar.png'
 import { menuItems } from "../../Utils/menuItems";
+import { signout } from "../../Utils/Icons";
 
 
 function Navigation() {
@@ -24,6 +25,11 @@ function Navigation() {
                     </li>
                 })}
             </ul>
+            <div className="bottom-nav">
+                <li>
+                    {signout} Sign Out
+                </li>
+            </div>
         </NavStyled>
     )
 }
