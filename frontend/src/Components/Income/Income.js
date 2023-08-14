@@ -10,7 +10,13 @@ function Income() {
     return (
         <IncomeStyled>
             <InnerLayout>
-                
+                <h1>Incomes</h1>
+                <div className="income-content">
+                    <div className="form-container"></div>
+                    <div className="incomes">
+
+                    </div>
+                </div>
             </InnerLayout>
         </IncomeStyled>
     )

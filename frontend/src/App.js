@@ -7,9 +7,12 @@ import { useMemo, useState } from 'react';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Income from './Components/Income/Income';
 import Expenses from './Components/Expenses/Expense';
+import { useGlobalContext } from './Context/globalContext';
 
 function App() {
   const [active, setActive] = useState(1)
+
+  const global = useGlobalContext()
 
   const displayData = () => {
     switch(active){
@@ -42,7 +45,6 @@ function App() {
     </AppStyled>
   );
 }
-
 const AppStyled = styled.div`
   height: 100vh;
   background-image: url(${props => props.bg});
