@@ -16,6 +16,7 @@ export const GlobalProvider = ({children}) => {
         const response = await axios.post(`${BASE_URL}add-income`, income)
             .catch((err) => {
                 setError(err.response.data.message)
+                console.log(response)
             })
 
         getIncomes()
@@ -31,12 +32,35 @@ export const GlobalProvider = ({children}) => {
         getIncomes()
     }
 
+    const totalIncome = () => {
+        let totalIncome = 0;
+        incomes.forEach((income) => {
+            totalIncome += income.amount
+        })
+
+        return totalIncome;
+    }
+
+    //calculate expense
+    const addExpense = () =>{}
+
+    const getExpenses = () => {}
+
+    const deleteExpense = () => {}
+
+    const totalExpenses = () => {}
+
     return (
         <GlobalContext.Provider value = {{
             addIncome,
             getIncomes,
             incomes,
             deleteIncome,
+            totalIncome,
+            addExpense,
+            getExpenses,
+            deleteExpense,
+            totalExpenses,
             error,
             setError
         }}>
