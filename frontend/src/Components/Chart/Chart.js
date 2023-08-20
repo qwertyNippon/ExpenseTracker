@@ -43,7 +43,8 @@ function Chart() {
                         return amount
                     })
                 ],
-                backgroundColor: 'green'
+                backgroundColor: 'green',
+                tension: .2
             },
             {
                 label: 'Expenses',
@@ -53,7 +54,8 @@ function Chart() {
                         return amount
                     })
                 ],
-                backgroundColor: 'red'
+                backgroundColor: 'red',
+                tension: .2
             }
         ]
     }
