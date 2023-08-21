@@ -36,13 +36,13 @@ export const GlobalStyle = createGlobalStyle`
                 transform: translateX(0);
             }
             25%{
-                transform: translateX(10px);
+                transform: translateX(15px);
             }
             50%{
-                transform: translateX(-10px);
+                transform: translateX(-15px);
             }
             75%{
-                transform: translateX(10px);
+                transform: translateX(15px);
             }
             100%{
                 transform: translateX(0);

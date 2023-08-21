@@ -26,7 +26,7 @@ function History() {
                                 type === 'expense' ? `-${amount}` : `+${amount}`
                             }
                         </p>
-                    </div>
+                    </div> 
                 )
             })}
         </HistoryStyled>
