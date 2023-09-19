@@ -5,13 +5,22 @@ import History from '../History/History';
 import { InnerLayout } from '../../Styles/Layouts';
 import { dollar } from '../../Utils/Icons';
 import Chart from '../Chart/Chart';
+import Weather from '../Weather/Weather';
 
 function Dashboard() {
-    const {totalExpenses,incomes, expenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
+    const {totalExpenses, incomes, expenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
 
+    // const handleLoc = async() => {
+    //     let data = await findLoc()
+    //     console.log(position)
+    // }
+
+    
+    // const [position, setPosition] = useState (()=> findLoc())
     useEffect(() => {
         getIncomes()
         getExpenses()
+        console.log('working')
     }, [])
 
     return (
